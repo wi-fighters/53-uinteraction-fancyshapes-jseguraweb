@@ -1,0 +1,31 @@
+.box {
+    width: 10rem;
+    height: 10rem;
+    background-color: royalblue;
+    margin: 2rem;
+    position: relative;
+}
+
+.with-circle::before {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    top: -1rem;
+    left: 4rem;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    background-color: royalblue;
+}
+
+.with-triangle::before {
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    top: -1rem;
+    left: 3.5rem;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: royalblue;
+}
